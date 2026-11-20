@@ -23,6 +23,12 @@ class MainApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: MainScreen(),
+      initialRoute: '/',
+      routes: {
+        '/homescreen': (context) => const HomeScreen(),
+        '/signin': (context) => SignInScreen(),
+        '/signup': (context) => SignUpScreen(),
+      },
     );
   }
 }
